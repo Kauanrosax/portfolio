@@ -8,42 +8,93 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             background-color: #f4f4f4;
-            text-align: center;
         }
         .container {
-            max-width: 600px;
+            max-width: 900px;
             margin: auto;
             background: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
-        h1 {
-            color: #333;
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
         }
-        p {
-            color: #555;
+        section {
+            padding: 20px;
+            text-align: left;
         }
         .links a {
             display: inline-block;
             margin: 10px;
-            text-decoration: none;
+            text-decoration: none; 
             color: #007BFF;
+            font-weight: bold;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .project-card {
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 40%;
+            margin: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
+    <header>
+        Kauan Pereira Rosa - Portfólio
+    </header>
     <div class="container">
-        <h1>Kauan Pereira Rosa</h1>
-        <p>Desenvolvedor em Formação | Soluções Digitais & Análise de Dados</p>
-        <p>Tenho experiência com HTML, CSS, JavaScript, Excel e Power BI.</p>
-        <div class="links">
-            <a href="#">Meus Projetos</a> |
-            <a href="#">LinkedIn</a> |
-            <a href="#">GitHub</a>
-        </div>
+        <section>
+            <h2>Sobre Mim</h2>
+            <p>Desenvolvedor em Formação | Soluções Digitais & Análise de Dados</p>
+            <p>Tenho experiência com HTML, CSS, JavaScript, Excel e Power BI.</p>
+        </section>
+        <section>
+            <h2>Projetos</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <a href="#">Ver mais</a>
+                </div>
+                <div class="project-card">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <a href="#">Ver mais</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Contato</h2>
+            <p>Email: <a href="mailto:seuemail@example.com">seuemail@example.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">Meu LinkedIn</a></p>
+            <p>GitHub: <a href="https://github.com/kauanrosax" target="_blank">Meu GitHub</a></p>
+        </section>
     </div>
+    <footer>
+        © 2025 Kauan Pereira Rosa. Todos os direitos reservados.
+    </footer>
 </body>
 </html>
